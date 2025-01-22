@@ -160,7 +160,7 @@ section
     border: 10px solid #A0BFDD;
 }
 
-
+/* Profile*/
 .quote {
     text-align: center;
     font-style: italic;
@@ -265,6 +265,9 @@ section
     background-color: #f5f5f5;
 }
 
+
+
+/*Contact*/
 
 .contact-section {
     max-width: 1200px;
@@ -402,6 +405,9 @@ section
 
 
 
+/*Education8*/
+
+
 .section-title {
     text-align: center;
     color: #0a2883;
@@ -487,6 +493,8 @@ section
 }
 
 
+
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -526,6 +534,67 @@ section
 
 
 
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #eae3e3;
+    background-image: url('../image/gunung.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center; 
+    padding: 20px;
+    margin-top: 3%;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: oblique;
+    color: #fff; 
+}
+
+nav {
+    background: #0a2883;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(223, 220, 220, 0.5);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 8px;
+    margin-top: 3px;
+}
+
+nav a {
+    color: #A0BFDD;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #0a2883;
+    transform: translateY(-5px);
+}
 
 .collage {
     margin-top: 100px; 
@@ -614,7 +683,30 @@ section
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #e9e6e6;
+    background-image: url('../image/gunung.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
 
+.footer h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 20px;
+    color: #0a2883;
+    margin: 5px 0;
+}
 
 .archived {
     font-size: 20px;
@@ -635,9 +727,16 @@ section
     margin-top: 10px;
 }       
 
-
-
-
+.footer h2 {
+    background: #0a2883;
+    color: white;
+    text-align: center;
+    font-style: oblique;
+    padding: 30px;
+    font-weight: normal;
+    font-size: 1.2rem;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
 
 @media (max-width: 1600px) {
     .collage {
@@ -680,25 +779,34 @@ section
 
 
 
-* {
-    box-sizing: border-box;
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Georgia', serif;
     background-image: url('../image/gunung.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    background-color: #A0BFDD;
     display: flex;
-}
-
-
-
-
-
-
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    color: black;
+  }
+  
+  
+  header {
+    background-color: #A0BFDD;
+    color: antiquewhite;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
 
   .audio-player {
     display: flex;
@@ -707,7 +815,13 @@ body {
     margin: 10px 0;
   }
   
+  nav {
+    background-color: #A0BFDD;
+  }
+  
  
+  
+  
   .resume-button {
     background-color: #0a2883;
     color: white;
@@ -786,7 +900,19 @@ body {
     color: #444;
   }
  
-
+  footer {
+    background-color: #0a2883;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 15px;
+    color: antiquewhite;
+  }
   
   
   @media (max-width: 768px) {
@@ -799,4 +925,5 @@ body {
       flex-direction: column;
       gap: 10px;
     }
+
 
